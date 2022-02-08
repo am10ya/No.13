@@ -4,8 +4,6 @@ body{
     overflow-x: hidden;
 }
 
-
-
 .site__main {
     padding: 20px;
     
@@ -36,6 +34,7 @@ body{
     margin-bottom: 20px;
 }
 
+
   
 
 h1{
@@ -51,6 +50,10 @@ h1{
     
 }
 
+.images1{
+    padding: 30px;
+}
+
 .shopname{
     text-align: left;
     margin: 10px;
@@ -61,6 +64,7 @@ h1{
     text-align: left;
     padding: 20px;
     font-size: 14px;
+    margin-top: -20px;
 }
 
 .content__text {
@@ -75,10 +79,10 @@ h1{
     border-top:dashed 2px gray;
     height:3px;
     color:#FFFFFF;
-    width: 400px; 
+    width: 80%; 
 }
 .content__information {
-    width: 400px;
+    width: 350px;
     display: flex;
     flex-direction: row;
     margin-top: 20px;
