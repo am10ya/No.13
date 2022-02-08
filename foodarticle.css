@@ -1,7 +1,10 @@
 @charset "UTF-8";
 body{
     font-family: "Sawarabi Gothic";
+    overflow-x: hidden;
 }
+
+
 
 .site__main {
     padding: 20px;
