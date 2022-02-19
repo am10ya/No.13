@@ -10,6 +10,29 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="sneaker.css">
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        function scrollChk() {
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            jQuery('.scroll-animation').not('.active').each(function () {
+                var pos = $(this).offset().top;
+
+                if (scroll > pos - windowHeight) {
+                    $(this).addClass("active");
+                }
+            });
+        }
+        $(window).scroll(function () {
+            scrollChk();
+        });
+        $('body').on('touchmove', function () {
+            scrollChk();
+        });
+    </script>
+
 </head>
 
 
@@ -56,7 +79,6 @@
             <div class="title">
                 <h1>New balance 57/40</h1>
             </div>
-
             <div class="text">
 
                 <p>遊びに行く時も会社に行く時も毎日履いてるスニーカー。デカめのNが可愛い。ソール厚めで歩きやすくてどこまでも行けちゃう。</p>
@@ -71,30 +93,55 @@
 
 
         <div class="image2">
-            <span>The <br/>Intelligence<br/> Choice</span>
+            <div class="scroll-animation fadein">
+                <span>The <br />Intelligence<br /> Choice</span>
+            
+
+            </div>
             <img
                 src="https://github.com/am10ya/No.13/blob/main/%E3%82%B9%E3%83%8B%E3%83%BC%E3%82%AB%E3%83%BC/%E3%82%B9%E3%83%8B%E3%83%BC%E3%82%AB%E3%83%BC%EF%BC%93.PNG?raw=true">
 
         </div>
 
+
         <div class="text">
-            <p>高校の時にNew Balanceめっちゃ流行ってたな〜。5年遅れでやっとゲットした。全く詳しくないけど、NBって数字ついてたらなんか良いことあるらしいな。</p>
+            <p>高校の時ニューバランス流行ってたけどうちの高校だけ？5年遅れでやっとゲットした。全く詳しくないけど、NBって数字ついてたらなんか良いことあるらしいな。</p>
 
         </div>
+
+        <div class="title">
+            <h1>
+                Code
+            </h1>
+        </div>
+
         <div class="image3">
             <img
                 src="https://github.com/am10ya/No.13/blob/main/%E3%82%B9%E3%83%8B%E3%83%BC%E3%82%AB%E3%83%BC/%E3%82%B9%E3%83%8B%E3%83%BC%E3%82%AB%E3%83%BC%EF%BC%92.JPEG?raw=true">
 
         </div>
 
+
+
         <div class="text">
             <p>初めは防水スプレーまで振って大事に履いてたのに。最近コーヒーこぼして汚れた。悲しい。洗おう。</p>
 
         </div>
 
-        <div class="image4">
-            <img src="https://github.com/am10ya/No.13/blob/main/%E3%82%B9%E3%83%8B%E3%83%BC%E3%82%AB%E3%83%BC/%E3%82%B9%E3%83%8B%E3%83%BC%E3%82%AB%E3%83%BC%EF%BC%94.JPEG?raw=true">
+        <div class="title">
+            <h1>
+                Visual
+            </h1>
         </div>
+
+        <div class="image4">
+            <img
+                src="https://github.com/am10ya/No.13/blob/main/%E3%82%B9%E3%83%8B%E3%83%BC%E3%82%AB%E3%83%BC/%E3%82%B9%E3%83%8B%E3%83%BC%E3%82%AB%E3%83%BC%EF%BC%94.JPEG?raw=true">
+        </div>
+
+
+        <div class="scroll-animation fadein">What is your favorite?</div>
+
 
 
 
