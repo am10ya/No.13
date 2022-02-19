@@ -18,19 +18,40 @@ h1 {
 .title {
     padding-top: 40px;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
+    animation-name: slideIn;
+    animation-duration: 3s;
+
 
 
 }
+
+
 
 .text {
     margin-bottom: 50px;
     margin-top: 50px;
     padding: 20px;
     font-size: 13px;
+   
 
+
+  
+    
 
 }
+@keyframes slideIn {
+    0% {
+      transform: translateX(180px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+    }
+    40%,100% {
+      opacity: 1;
+    }
+  }
 
 
 @keyframes animation_1 {
@@ -45,12 +66,7 @@ h1 {
 
 }
 
-.image1 {
-    animation-name: animation_1;
-    animation-duration: 3s;
 
-
-}
 
 
 @keyframes animation_3 {
@@ -76,7 +92,7 @@ h1 {
     left: 30%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Bodoni 72', sans-serif;
 
 
@@ -94,3 +110,14 @@ h1 {
 
 
 }
+
+
+.fadein{
+    -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+    opacity: 0;
+  }
+  .fadein.active{
+    opacity: 1;
+  }
