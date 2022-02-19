@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Sawarabi Gothic";
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'DIN Alternate', sans-serif;
+
+}
+
+.top {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.title {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 30px;
+
+
+}
+
+.text {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 13px;
+
+
+}
+
+
+@keyframes animation_1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+
+}
+
+.image1 {
+    animation-name: animation_1;
+    animation-duration: 3s;
+
+
+}
+
+
+@keyframes animation_3 {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+.image2 {
+    position: relative;
+}
+
+.image2 span {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Bodoni 72', sans-serif;
+
+
+
+}
+
+.image2 img {
+    width: 100%;
+}
+
+
+.image3 {
+    animation-name: animation_3;
+    animation-duration: 3s;
+
+
+}
