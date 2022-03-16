@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.image{
+    margin-top: 20px;
+    
+}
+
+.content_info{
+   margin: 20px;
+   text-align: center;
+}
+
+.shopdetail{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.list{
+    margin-bottom: 20px;
+}
