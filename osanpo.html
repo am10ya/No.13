@@ -8,10 +8,30 @@
     <title>No.13</title>
     <meta name="description" content="am1Blog">
     <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="category.css">
-    <link rel="stylesheet" href="osanpo.css">
+    <link rel="stylesheet" href="osanpo3.css">
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        function scrollChk() {
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            jQuery('.scroll-animation').not('.active').each(function () {
+                var pos = $(this).offset().top;
+
+                if (scroll > pos - windowHeight) {
+                    $(this).addClass("active");
+                }
+            });
+        }
+        $(window).scroll(function () {
+            scrollChk();
+        });
+        $('body').on('touchmove', function () {
+            scrollChk();
+        });
+    </script>
 
 
 </head>
@@ -52,15 +72,16 @@
 
 
     <div class="container">
-
-        <div class="mainVisual">
-            <img src="https://github.com/am10ya/No.13/blob/main/osanpo/top.JPEG?raw=true">
-         </div>
+        <div class="head">
+            <h1>Walk in Tokyo</h1>
+        </div>
 
         <div class="mainText">
             <p>
-                東京はいっぱい見るとこあってスッゲェな〜。<br/>
-               エリア別におすすめスポットをまとめてみた。おさんぽプランの参考に是非。
+                東京エリア別お出かけスポット。<br/>
+                インテリア、雑貨、花屋、喫茶店。<br/>
+                
+        
             </p>
 
         </div>
@@ -77,7 +98,7 @@
                         <p class="category">
                             [恵比寿] </p>
                         <p class="title">
-                            <b>輸入インテリアと食器、ZINE</b>
+                            <b>輸入インテリアと食器</b>
                         </p>
                         <p class="category date">
                             2022/03/10
@@ -123,69 +144,55 @@
 
             <div class="cardList_item">
                 <div class="card">
-                    <a href="xojeung.html">
+                    <a href="kichijoji.html">
                         <div class="images">
-                            <img src="https://github.com/am10ya/xojeung/blob/main/phonto%207.PNG?raw=true">
+                            <img
+                                src="https://github.com/am10ya/No.13/blob/main/%E5%90%89%E7%A5%A5%E5%AF%BA/IMG_5635.jpg?raw=true">
                         </div>
-
                         <p class="category">
-                            Food </p>
-
+                            [吉祥寺] </p>
                         <p class="title">
-                            <b>XO醤ってなんだよ</b>
+                            <b>雑貨屋と自然に癒される</b>
                         </p>
-
                         <p class="category date">
-                            2022/01/28
-
+                            2022/03/19
                         </p>
                     </a>
                     <div class="rowtag">
                         <p class="tag">
                             <a href="">
-                                #food
+                                #interior
                             </a>
                         </p>
                     </div>
-
-
                 </div>
-
-
             </div>
+
 
             <div class="cardList_item">
                 <div class="card">
-                    <a href="/">
+                    <a href="kitasando.html">
                         <div class="images">
                             <img
-                                src="/">
+                                src="https://github.com/am10ya/No.13/blob/main/%E5%8C%97%E5%8F%82%E9%81%93/IMG_3972.jpg?raw=true">
                         </div>
-
                         <p class="category">
-                            Fashion </p>
-
+                            [北参道] </p>
                         <p class="title">
-                            <b>お気に入りのスニーカー</b>
+                            <b>お花とか色々</b>
                         </p>
-
                         <p class="category date">
-                            2022/02/22
-
+                            2022/04/03
                         </p>
-
-
-
                     </a>
                     <div class="rowtag">
                         <p class="tag">
                             <a href="">
-                                #fashion
+                                #flower
                             </a>
                         </p>
                     </div>
                 </div>
-
             </div>
 
 
